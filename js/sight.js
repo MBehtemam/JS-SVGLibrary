@@ -6,7 +6,7 @@ class SVGElement{
         return this;
     }
     attr(attrs){
-        for([key,value] of Object.entries(attrs)){
+        for(const [key,value] of Object.entries(attrs)){
             this.node.setAttributeNS(null,key,value);
         }
         return this;
